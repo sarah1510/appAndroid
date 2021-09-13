@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100dp"
+            android:background="@drawable/balanca_logo"
+           android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:text="Trocar Foto"
+         android:textColor="@color/pink"
+         android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+         android:textSize="25sp"
+        android:layout_marginStart="250dp"
+         android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:drawableStart="@drawable/senhaa"
+        android:hint="Dados para autenticação"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginTop="240dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Senha"
+        android:layout_marginTop="290dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:drawableStart="@drawable/senhaa"
+        android:hint="Dados pessoais"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="350dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:layout_marginTop="390dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profissão"
+        android:layout_marginTop="430dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Altura"
+        android:layout_marginTop="470dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data de Nascimento"
+        android:layout_marginTop="510dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"/>
+
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feminino"
+        android:layout_marginStart="20dp"
+       android:layout_marginTop="570dp"
+        android:textSize="20sp"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masculino"
+        android:layout_marginStart=""
+        android:textSize="20sp"/>
+
+</RelativeLayout>
