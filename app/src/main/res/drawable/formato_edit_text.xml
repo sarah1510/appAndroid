@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="rectangle"
-
-    xmlns:android="http://schemas.android.com/apk/res/android"
-
-
-    >
-
-    <gradient android:angle="360"/>
+<shape
+    android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <stroke
-        android:color="#f9a7a7"
-        android:width="2dp"
+    <gradient
+        android:startColor="#172E3F"
+        android:endColor="#395663"
         android:angle="45"/>
 
+    <stroke
+        android:color="@android:color/white"
+        android:width="2dp"
+        android:angle="45" />
+
+
     <corners android:radius="16dp"/>
+
+
 
 </shape>

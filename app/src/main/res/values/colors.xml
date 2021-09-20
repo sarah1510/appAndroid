@@ -22,4 +22,10 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorWrite">#FFFFFF</color>
+
+    <color name="blue_200">#799dad</color>
+    <color name="blue_500">#395663</color>
+    <color name="blue_700">#172E3F</color>
+
+
 </resources>

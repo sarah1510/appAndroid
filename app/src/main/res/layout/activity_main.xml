@@ -25,7 +25,7 @@
           android:layout_width="100dp"
           android:layout_height="100dp"
           android:layout_gravity="center"
-          android:src="@drawable/balanca_logo"/>
+          android:src="@drawable/calculadora_de_calorias"/>
 
       <TextView
           android:layout_width="match_parent"
@@ -43,7 +43,7 @@
          android:drawableStart="@drawable/peso"
           android:hint="Qual seu peso?"
           android:textColorHint="@color/white"
-          android:background="@drawable/formato_text"
+          android:background="@drawable/formato_edit_text"
           android:padding="24dp"
           android:layout_marginTop="32dp"
           android:drawablePadding="16dp"
@@ -57,7 +57,7 @@
           android:layout_height="wrap_content"
           android:layout_marginTop="16dp"
           android:layout_marginBottom="16dp"
-          android:background="@drawable/formato_text"
+          android:background="@drawable/formato_edit_text"
           android:drawablePadding="16dp"
           android:drawableTint="@color/colorWrite"
           android:hint="Qual sua altura?"

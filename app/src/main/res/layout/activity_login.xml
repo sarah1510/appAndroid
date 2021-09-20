@@ -7,7 +7,6 @@
     tools:context=".LoginActivity">
 
 
-
     <LinearLayout
         android:id="@+id/_header"
         android:layout_width="match_parent"
@@ -38,24 +37,24 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:src="@drawable/balanca_logo"
-        android:layout_marginStart="330dp"
-        android:layout_marginTop="8dp"/>
+        android:src="@drawable/calculadora_de_calorias"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="10dp"/>
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Login"
-            android:textSize="40sp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="180dp"
-            android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-    android:text="Faça login para continuar"
+        android:text="Login"
+        android:textSize="40sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="180dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faça login para continuar"
         android:textSize="20sp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="230dp"/>
@@ -66,6 +65,7 @@
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/email"
         android:hint="Email"
+        android:textColorHint="@android:color/white"
         android:background="@drawable/formato_edit_text"
         android:padding="24dp"
         android:layout_marginTop="300dp"
@@ -79,8 +79,9 @@
         android:id="@+id/edit_text_senha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableStart="@drawable/senhaa"
+        android:drawableStart="@drawable/senha"
         android:hint="Senha"
+        android:textColorHint="@android:color/white"
         android:background="@drawable/formato_edit_text"
         android:padding="24dp"
         android:layout_marginTop="390dp"
@@ -107,10 +108,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="550dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="270dp"
+            android:layout_marginStart="275dp"
             android:text="Lembrar-me"
-            android:textSize="20sp"
+            android:textSize="15sp"
            android:textColor="@color/cinza"/>
 
     <TextView
@@ -119,26 +119,25 @@
         android:text="Esqueci a senha"
         android:layout_marginTop="580dp"
         android:textColor="@color/blue"
-        android:textSize="15sp"
-        android:layout_marginStart="300dp" />
+        android:layout_marginStart="285dp" />
 
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Não tem conta?"
-        android:layout_marginTop="600dp"
-        android:textSize="15sp"
-        android:layout_marginStart="155sp"/>
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Não tem conta? Crie uma conta agora"
+            android:layout_marginTop="610dp"
+            android:textSize="15sp"
+            android:layout_marginStart="140sp"/>
+
+    </LinearLayout>
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Crie uma conta agora"
-        android:textColor="@color/blue"
-        android:layout_marginStart="270sp"
-        android:textSize="15sp"
-        android:layout_marginTop="600dp" />
 
     <ImageView
         android:layout_width="match_parent"
@@ -150,11 +149,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="750dp"
+        android:layout_marginTop="700dp"
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:textColor="@color/white"
-        android:text="Desenvolvido por DS2M-A"
+        android:text="Desenvolvido por DS2M"
         android:textSize="16sp"/>
 
 
