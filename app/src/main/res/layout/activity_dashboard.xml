@@ -3,9 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
     <LinearLayout
+        android:id="@+id/linearDados"
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:background="@drawable/activity_background"
@@ -49,7 +50,6 @@
                 android:text="Singer"
                 android:fontFamily="@font/montserrat"
                 android:textColor="@android:color/white"/>
-
 
         </LinearLayout>
 
@@ -160,9 +160,91 @@
 
         </LinearLayout>
 
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative_peso"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/formato_button2">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="122dp"
+                android:padding="15dp"
+                android:src="@drawable/balance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="30dp"
+                android:text="Pesar agora"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue_700"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="60dp"
+                android:text="Acompanhe o seu peso"
+                android:textStyle="bold"
+                android:textColor="@color/blue_200"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/formato_button2">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="122dp"
+                android:padding="15dp"
+                android:src="@drawable/grafico" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="30dp"
+                android:text="Histórico"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue_700"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="60dp"
+                android:text="Reveja suas conquistas"
+                android:textStyle="bold"
+                android:textColor="@color/blue_200"/>
+
+        </RelativeLayout>
+
+
+
 
 
     </LinearLayout>
+
+
 
 
 </LinearLayout>
