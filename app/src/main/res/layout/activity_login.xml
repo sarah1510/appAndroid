@@ -6,12 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+
 
     <LinearLayout
-        android:id="@+id/_header"
+        android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_alignParentTop="true"
@@ -45,109 +43,112 @@
         android:src="@drawable/calculadora_de_calorias" />
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:textSize="40sp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="160dp"
-        android:textStyle="bold"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Faça login para continuar"
-        android:textSize="20sp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="210dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="40sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="160dp"
+            android:textStyle="bold"/>
 
-    <EditText
-        android:id="@+id/edit_text_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableStart="@drawable/email"
-        android:hint="Email"
-        android:textColorHint="@android:color/white"
-        android:background="@drawable/formato_edit_text"
-        android:padding="24dp"
-        android:layout_marginTop="255dp"
-        android:drawablePadding="16dp"
-        android:maxLines="1"
-        android:drawableTint="@color/blue_200"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faça login para continuar"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="210dp"/>
 
-    <EditText
-        android:id="@+id/edit_text_senha"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableStart="@drawable/senha"
-        android:hint="Senha"
-        android:textColorHint="@android:color/white"
-        android:background="@drawable/formato_edit_text"
-        android:padding="24dp"
-        android:layout_marginTop="340dp"
-        android:drawablePadding="16dp"
-        android:maxLines="1"
-        android:drawableTint="@color/blue_200"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"/>
+        <EditText
+            android:id="@+id/edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:drawableStart="@drawable/email"
+            android:hint="Email"
+            android:textColorHint="@android:color/white"
+            android:background="@drawable/formato_edit_text"
+            android:padding="24dp"
+            android:layout_marginTop="255dp"
+            android:drawablePadding="16dp"
+            android:maxLines="1"
+            android:drawableTint="@color/blue_200"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
 
-    <Button
-        android:id="@+id/button_entrar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Entrar"
-        android:background="@drawable/formato_button"
-        android:textColor="@color/white"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        android:layout_marginTop="430dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"/>
+        <EditText
+            android:id="@+id/edit_text_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/senha"
+            android:hint="Senha"
+            android:textColorHint="@android:color/white"
+            android:background="@drawable/formato_edit_text"
+            android:padding="24dp"
+            android:layout_marginTop="340dp"
+            android:drawablePadding="16dp"
+            android:maxLines="1"
+            android:drawableTint="@color/blue_200"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+            android:id="@+id/button_entrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entrar"
+            android:background="@drawable/formato_button"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="430dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
 
         <CheckBox
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="520dp"
+            android:layout_marginTop="490dp"
             android:layout_marginStart="275dp"
             android:text="Lembrar-me"
             android:textSize="15sp"
-           android:textColor="@color/cinza"/>
-
-    <TextView
-        android:id="@+id/text_view_esqueci_senha"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Esqueci a senha"
-        android:layout_marginTop="560dp"
-        android:textColor="@color/blue"
-        android:layout_marginStart="285dp" />
-
-
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@+id/text_view_esqueci_senha"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="10dp">
+            android:textColor="@color/cinza"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/text_view_esqueci_senha"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Não tem uma conta?"
-            android:textColor="@android:color/darker_gray"/>
+            android:text="Esqueci a senha"
+            android:layout_marginTop="520dp"
+            android:textColor="@color/blue"
+            android:layout_marginStart="285dp" />
 
-        <TextView
+
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Criar nova conta"
-            android:textColor="@color/blue_200"
-            android:layout_marginStart="10dp"/>
-    </LinearLayout>
+            android:orientation="horizontal"
+            android:layout_below="@+id/text_view_esqueci_senha"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Não tem uma conta?"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/tv_criar_conta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Criar nova conta"
+                android:textColor="@color/blue"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
 
 
     <ImageView
@@ -168,7 +169,6 @@
         android:textSize="16sp"/>
 
 
-</ScrollView>
 
 
 
