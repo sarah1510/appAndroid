@@ -8,7 +8,7 @@
     <LinearLayout
         android:id="@+id/linearDados"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="320dp"
         android:background="@drawable/activity_background"
         android:orientation="vertical">
 
@@ -26,6 +26,7 @@
                 app:cardCornerRadius="60dp">
 
                 <ImageView
+                    android:id="@+id/iv_dash_foto_perfil"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/profile"
@@ -35,6 +36,7 @@
 
 
             <TextView
+                android:id="@+id/tv_dash_nome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Susana Hoffs"
@@ -45,6 +47,7 @@
                 android:textColor="@color/blue_200" />
 
             <TextView
+                android:id="@+id/tv_dash_profissao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Singer"
@@ -61,9 +64,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:layout_marginEnd="30dp"
-            android:layout_marginTop="40dp">
+            android:layout_marginTop="35dp">
 
             <TextView
+                android:id="@+id/tv_dash_imc"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -73,6 +77,7 @@
                 android:gravity="center"/>
 
             <TextView
+                android:id="@+id/tv_dash_ncd"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -82,6 +87,7 @@
                 android:gravity="center"/>
 
             <TextView
+                android:id="@+id/tv_dash_idade"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -91,6 +97,7 @@
                 android:gravity="center"/>
 
             <TextView
+                android:id="@+id/tv_dash_peso"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -100,6 +107,7 @@
                 android:gravity="center"/>
 
             <TextView
+                android:id="@+id/tv_dash_altura"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -163,6 +171,7 @@
     </LinearLayout>
 
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -173,7 +182,7 @@
             android:layout_width="300dp"
             android:layout_height="100dp"
             android:layout_marginStart="50dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/formato_button2">
 
             <ImageView
@@ -238,12 +247,7 @@
 
         </RelativeLayout>
 
-
-
-
-
     </LinearLayout>
-
 
 </LinearLayout>
 

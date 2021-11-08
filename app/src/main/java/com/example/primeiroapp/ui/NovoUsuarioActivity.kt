@@ -12,8 +12,10 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.*
+import androidx.core.graphics.drawable.toBitmap
 import com.example.primeiroapp.R
 import com.example.primeiroapp.model.Usuario
+import com.example.primeiroapp.utils.convertBitmapToBase64
 import com.example.primeiroapp.utils.convertStringToLocalDate
 import java.time.LocalDate
 import java.util.*
@@ -51,6 +53,17 @@ class NovoUsuarioActivity : AppCompatActivity() {
         radioM = findViewById(R.id.radio_masculino)
         tvTrocarFoto = findViewById((R.id.tv_trocar_foto))
         ivFotoPerfil = findViewById(R.id.iv_foto_perfil)
+
+        //Carregar bitmap padrão caso o usuário não escolha uma foto
+        //pgn, gif, jpeg...
+        //imageBitmap = BitmapFactory.decodeResource(resources, R.drawable.person_24)
+
+        //Caso a imagem seja um vecor asset
+        imageBitmap =
+                resources
+                        .getDrawable(R.drawable.person_24)
+                        .toBitmap()
+
 
 
         supportActionBar!!.title = "Cadastro de novo usuário"
@@ -168,16 +181,17 @@ class NovoUsuarioActivity : AppCompatActivity() {
                     nascimento.dayOfMonth
                 ),
                 editProfissao.text.toString(),
-                if(radioF.isChecked){
-                    'F'
-                } else {
-                    'M'
-                },
-                ""
+                    if (radioF.isChecked) 'F' else 'M',
+                    convertBitmapToBase64(imageBitmap!!)
+            )
 
                 //Outra maneira de realizar (sem as chaves{}):
-                // if (radioF.isChecked) 'F' else 'M'
-            )
+                // if(radioF.isChecked){
+                //    'F'
+                // } else {
+                //    'M'
+                //},
+
 
             // Salvar o registro
             // Em um SharedPreferences
@@ -216,6 +230,10 @@ class NovoUsuarioActivity : AppCompatActivity() {
 
     fun validarCampos(): Boolean {
         var valido = true
+
+//        if (iamgeBitmap == null){
+//
+//        }
 
         if (editEmail.text.isEmpty()) {
             editEmail.error = "O campo é obrigatório"
