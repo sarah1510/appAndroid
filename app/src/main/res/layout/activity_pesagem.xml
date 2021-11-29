@@ -1,5 +1,5 @@
-
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -16,11 +16,12 @@
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             app:cardCornerRadius="80dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="40dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
             app:cardBackgroundColor="@color/white">
 
             <ImageView
@@ -28,17 +29,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ic_workout"/>
+                android:src="@drawable/profile"/>
 
         </androidx.cardview.widget.CardView>
 
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_workout"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat"
             android:text="PESAGEM"
-            android:layout_marginTop="20dp"
             android:textSize="27sp"
             android:textStyle="bold"
             android:gravity="center"
@@ -54,6 +59,12 @@
 
 
     </LinearLayout>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -73,11 +84,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Data:"
+            android:text="Data da pesagem:"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textColor="@color/blue_700"
+            android:textStyle="bold"/>
 
         <TextView
+            android:id="@+id/tv_data_pesagem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="22/11/2021"
@@ -86,29 +99,50 @@
             android:textStyle="bold" />
 
         <TextView
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Peso:"
+            android:text="Nível de atividade:"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textColor="@color/blue_700"
+            android:textStyle="bold"/>
 
-        <EditText
+        <Spinner
+            android:id="@+id/spinner_niveis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Digite o seu peso"
-            android:textSize="18sp" />
+            android:entries="@array/niveis" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:text="Seu novo peso:"
+            android:textSize="18sp"
+            android:textColor="@color/blue_700"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et_novo_peso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue_200" />
 
         <Button
+            android:id="@+id/btn_registrar_novo_texto"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/formato_button"
-            android:text="SALVAR"
+            android:text="REGISTRAR PESO"
             android:textColor="@color/white"
-            android:textSize="18dp" />
+            android:textSize="18dp"
+            android:layout_marginBottom="100dp"/>
 
     </LinearLayout>
 
+</ScrollView>
 
 </LinearLayout>

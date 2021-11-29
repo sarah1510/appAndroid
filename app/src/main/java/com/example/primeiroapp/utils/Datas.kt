@@ -40,3 +40,19 @@ fun calcularIdade(dataNascimento: String): Int{
 
     return idade
 }
+
+
+fun getDataAtualBrasil(): String{
+    //convertendo localdate em data atual do brasil
+    val hoje = LocalDate.now() //2021-11-29
+
+    val formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy")
+    val dataBrasil = hoje.format(formatter)
+
+    return dataBrasil
+}
+
+
+fun converterLocalDateEmDataBrasil(){
+
+}

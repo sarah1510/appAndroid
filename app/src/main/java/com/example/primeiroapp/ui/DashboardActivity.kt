@@ -1,8 +1,10 @@
 package com.example.primeiroapp.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.RelativeLayout
 import android.widget.TextView
 import com.example.primeiroapp.R
 import com.example.primeiroapp.utils.calcularIdade
@@ -18,10 +20,13 @@ class DashboardActivity : AppCompatActivity() {
     lateinit var tvIdade: TextView
     lateinit var tvAltura: TextView
     lateinit var ivPerfil: ImageView
+    lateinit var relativeNovaPesagem: RelativeLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
+
+        supportActionBar!!.hide()
 
         tvNome = findViewById(R.id.tv_dash_nome)
         tvProfissao = findViewById(R.id.tv_dash_profissao)
@@ -31,6 +36,13 @@ class DashboardActivity : AppCompatActivity() {
         tvIdade = findViewById(R.id.tv_dash_idade)
         tvAltura = findViewById(R.id.tv_dash_altura)
         ivPerfil = findViewById(R.id.iv_dash_foto_perfil)
+        relativeNovaPesagem = findViewById(R.id.relative_pesar_agora)
+
+        relativeNovaPesagem.setOnClickListener {
+            val intent = Intent(this, PesagemActivity::class.java)
+            startActivity(intent)
+
+        }
 
         carregarDashboard()
     }
