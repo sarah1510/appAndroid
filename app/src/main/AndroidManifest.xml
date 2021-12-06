@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/calculadora_de_calorias"
         android:supportsRtl="true"
         android:theme="@style/Theme.PrimeiroApp">
-        <activity android:name=".SobrePesagemActivity"></activity>
+        <activity android:name=".ui.HistoricoActivity"></activity>
+        <activity android:name=".SobrePesagemActivity" />
         <activity android:name=".ui.PesagemActivity" />
         <activity android:name=".ui.DashboardActivity" />
         <activity android:name=".ui.NovoUsuarioActivity" />
